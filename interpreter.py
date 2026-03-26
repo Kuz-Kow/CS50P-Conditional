@@ -1,13 +1,14 @@
-expression = input("Expression: ").strip()
+x, y, z = input("Expression: ").strip().split()
 
-expression = expression.split(" ")
+x = int(x)
+z = int(z)
 
-match expression[1]:
+match y:
     case "*":
-        print(int(expression[0])*int(expression[2]))
+        print(x*z)
     case "/":
-        print(int(expression[0])/int(expression[2]))
+        print(x/z)
     case "+":
-        print(int(expression[0])+int(expression[2]))
+        print(x+z)
     case "-":
-        print(int(expression[0])-int(expression[2]))
+        print(x-z)
